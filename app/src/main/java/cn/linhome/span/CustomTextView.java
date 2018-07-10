@@ -1,16 +1,17 @@
-package com.fanwe.span;
+package cn.linhome.span;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
-import com.fanwe.lib.span.MatcherInfo;
-import com.fanwe.lib.span.SDImageSpan;
-import com.fanwe.lib.span.SDPatternUtil;
-import com.fanwe.lib.span.SDSpannableStringBuilder;
-import com.fanwe.lib.span.view.SDSpannableTextView;
 import com.fanwe.lib.utils.context.FPackageUtil;
 
 import java.util.List;
+
+import cn.linhome.lib.span.MatcherInfo;
+import cn.linhome.lib.span.SDImageSpan;
+import cn.linhome.lib.span.SDPatternUtil;
+import cn.linhome.lib.span.SDSpannableStringBuilder;
+import cn.linhome.lib.span.view.SDSpannableTextView;
 
 /**
  * Created by Administrator on 2017/7/18.

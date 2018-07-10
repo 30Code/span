@@ -1,20 +1,19 @@
-package com.fanwe.span;
+package cn.linhome.span;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
 import com.fanwe.library.SDLibrary;
+import com.fanwe.library.activity.SDBaseActivity;
 
-public class MainActivity extends AppCompatActivity
+public class MainActivity extends SDBaseActivity
 {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
+    protected void init(Bundle savedInstanceState)
     {
         SDLibrary.getInstance().init(getApplication());
-        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViewById(R.id.btn_textview).setOnClickListener(new View.OnClickListener()
         {

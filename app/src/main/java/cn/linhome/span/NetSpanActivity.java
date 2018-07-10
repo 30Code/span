@@ -1,10 +1,11 @@
-package com.fanwe.span;
+package cn.linhome.span;
 
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.fanwe.lib.span.SDSpannableStringBuilder;
 import com.fanwe.library.activity.SDBaseActivity;
+
+import cn.linhome.lib.span.SDSpannableStringBuilder;
 
 /**
  * Created by Administrator on 2017/7/18.

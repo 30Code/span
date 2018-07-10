@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fanwe.lib.span.view;
+package cn.linhome.lib.span.view;
 
 import android.content.Context;
 import android.text.Spannable;
@@ -21,7 +21,7 @@ import android.util.AttributeSet;
 import android.util.SparseArray;
 import android.widget.EditText;
 
-import com.fanwe.lib.span.MatcherInfo;
+import cn.linhome.lib.span.MatcherInfo;
 
 public class SDSpannableEditText extends EditText
 {
