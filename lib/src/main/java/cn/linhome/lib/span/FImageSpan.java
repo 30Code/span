@@ -23,80 +23,75 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.text.style.ImageSpan;
 
-
-/**
- * Created by Administrator on 2017/7/10.
- */
-
-public class SDImageSpan extends ImageSpan implements IImageSpanHelper
+public class FImageSpan extends ImageSpan implements FIImageSpanHelper
 {
-    public SDImageSpan(Bitmap b)
+    public FImageSpan(Bitmap b)
     {
         super(b);
     }
 
-    public SDImageSpan(Bitmap b, int verticalAlignment)
+    public FImageSpan(Bitmap b, int verticalAlignment)
     {
         super(b, verticalAlignment);
     }
 
-    public SDImageSpan(Context context, Bitmap b)
+    public FImageSpan(Context context, Bitmap b)
     {
         super(context, b);
     }
 
-    public SDImageSpan(Context context, Bitmap b, int verticalAlignment)
+    public FImageSpan(Context context, Bitmap b, int verticalAlignment)
     {
         super(context, b, verticalAlignment);
     }
 
-    public SDImageSpan(Drawable d)
+    public FImageSpan(Drawable d)
     {
         super(d);
     }
 
-    public SDImageSpan(Drawable d, int verticalAlignment)
+    public FImageSpan(Drawable d, int verticalAlignment)
     {
         super(d, verticalAlignment);
     }
 
-    public SDImageSpan(Drawable d, String source)
+    public FImageSpan(Drawable d, String source)
     {
         super(d, source);
     }
 
-    public SDImageSpan(Drawable d, String source, int verticalAlignment)
+    public FImageSpan(Drawable d, String source, int verticalAlignment)
     {
         super(d, source, verticalAlignment);
     }
 
-    public SDImageSpan(Context context, Uri uri)
+    public FImageSpan(Context context, Uri uri)
     {
         super(context, uri);
     }
 
-    public SDImageSpan(Context context, Uri uri, int verticalAlignment)
+    public FImageSpan(Context context, Uri uri, int verticalAlignment)
     {
         super(context, uri, verticalAlignment);
     }
 
-    public SDImageSpan(Context context, int resourceId)
+    public FImageSpan(Context context, int resourceId)
     {
         super(context, resourceId);
     }
 
-    public SDImageSpan(Context context, int resourceId, int verticalAlignment)
+    public FImageSpan(Context context, int resourceId, int verticalAlignment)
     {
         super(context, resourceId, verticalAlignment);
     }
 
-    private ImageSpanHelper mImageSpanHelper;
+    private FImageSpanHelper mImageSpanHelper;
 
-    private ImageSpanHelper getImageSpanHelper()
+    private FImageSpanHelper getImageSpanHelper()
     {
         if (mImageSpanHelper == null)
         {
-            mImageSpanHelper = new ImageSpanHelper(this);
+            mImageSpanHelper = new FImageSpanHelper(this);
         }
         return mImageSpanHelper;
     }

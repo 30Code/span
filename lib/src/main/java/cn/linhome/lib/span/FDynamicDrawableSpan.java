@@ -27,14 +27,14 @@ import android.view.View;
 
 import java.lang.ref.WeakReference;
 
-public abstract class SDDynamicDrawableSpan extends DynamicDrawableSpan implements IImageSpanHelper
+public abstract class FDynamicDrawableSpan extends DynamicDrawableSpan implements FIImageSpanHelper
 {
     private WeakReference<View> mView;
 
     /**
      * @param view span要依附的view
      */
-    public SDDynamicDrawableSpan(View view)
+    public FDynamicDrawableSpan(View view)
     {
         mView = new WeakReference<>(view);
     }
@@ -61,13 +61,13 @@ public abstract class SDDynamicDrawableSpan extends DynamicDrawableSpan implemen
         }
     }
 
-    private ImageSpanHelper mImageSpanHelper;
+    private FImageSpanHelper mImageSpanHelper;
 
-    private ImageSpanHelper getImageSpanHelper()
+    private FImageSpanHelper getImageSpanHelper()
     {
         if (mImageSpanHelper == null)
         {
-            mImageSpanHelper = new ImageSpanHelper(this);
+            mImageSpanHelper = new FImageSpanHelper(this);
         }
         return mImageSpanHelper;
     }

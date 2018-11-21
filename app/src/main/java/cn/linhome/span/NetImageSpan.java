@@ -6,13 +6,13 @@ import android.view.View;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
-import cn.linhome.lib.span.SDDynamicDrawableSpan;
+import cn.linhome.lib.span.FDynamicDrawableSpan;
 
 /**
  * Created by Administrator on 2017/7/18.
  */
 
-public class NetImageSpan extends SDDynamicDrawableSpan
+public class NetImageSpan extends FDynamicDrawableSpan
 {
     private String mUrl; //图片url地址
     private Bitmap mBitmap;

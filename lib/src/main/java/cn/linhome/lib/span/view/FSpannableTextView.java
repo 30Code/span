@@ -19,21 +19,16 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import cn.linhome.lib.span.SDSpannableStringBuilder;
+import cn.linhome.lib.span.FSpannableStringBuilder;
 
-
-/**
- * Created by Administrator on 2017/7/13.
- */
-
-public abstract class SDSpannableTextView extends TextView
+public abstract class FSpannableTextView extends TextView
 {
-    public SDSpannableTextView(Context context)
+    public FSpannableTextView(Context context)
     {
         super(context);
     }
 
-    public SDSpannableTextView(Context context, AttributeSet attrs)
+    public FSpannableTextView(Context context, AttributeSet attrs)
     {
         super(context, attrs);
     }
@@ -43,13 +38,13 @@ public abstract class SDSpannableTextView extends TextView
     {
         if (text != null)
         {
-            SDSpannableStringBuilder sb = null;
-            if (text instanceof SDSpannableStringBuilder)
+            FSpannableStringBuilder sb = null;
+            if (text instanceof FSpannableStringBuilder)
             {
-                sb = (SDSpannableStringBuilder) text;
+                sb = (FSpannableStringBuilder) text;
             } else
             {
-                sb = new SDSpannableStringBuilder();
+                sb = new FSpannableStringBuilder();
                 sb.append(text);
             }
             onProcessSpannableStringBuilder(sb);
@@ -59,5 +54,5 @@ public abstract class SDSpannableTextView extends TextView
         super.setText(text, type);
     }
 
-    protected abstract void onProcessSpannableStringBuilder(SDSpannableStringBuilder builder);
+    protected abstract void onProcessSpannableStringBuilder(FSpannableStringBuilder builder);
 }

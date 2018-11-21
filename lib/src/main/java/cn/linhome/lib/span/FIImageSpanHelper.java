@@ -15,11 +15,7 @@
  */
 package cn.linhome.lib.span;
 
-/**
- * Created by Administrator on 2017/7/10.
- */
-
-public interface IImageSpanHelper
+public interface FIImageSpanHelper
 {
     /**
      * 设置宽度
